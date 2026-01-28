@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil - SULAIMANU ADAMU BELLO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 2.5rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        header .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            font-size: 1.1rem;
+            color: #ecf0f1;
+        }
+        
+        main {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        section {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #3498db;
+        }
+        
+        .profile-header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .profile-image img {
+            width: 180px;
+            height: 180px;
+            border-radius: 10px;
+            object-fit: cover;
+            border: 3px solid #3498db;
+            box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+        }
+        
+        .profile-info {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .profile-info h3 {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        
+        .bio {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #555;
+        }
+        
+        ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 0.8rem;
+        }
+        
+        li {
+            background: #f8f9fa;
+            padding: 0.8rem 1.2rem;
+            border-radius: 5px;
+            border-left: 3px solid #3498db;
+            color: #555;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        
+        table td {
+            padding: 1rem;
+            border-bottom: 1px solid #eee;
+            vertical-align: top;
+        }
+        
+        table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        table td:first-child {
+            color: #3498db;
+            font-weight: 600;
+            width: 180px;
+        }
+        
+        table td:last-child {
+            color: #555;
+        }
+        
+        .contact-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        a {
+            color: white;
+            background: #3498db;
+            text-decoration: none;
+            padding: 0.7rem 1.5rem;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            font-weight: 500;
+            display: inline-block;
+        }
+        
+        a:hover {
+            background: #2980b9;
+        }
+        
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        footer p {
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .profile-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            section {
+                padding: 1.5rem;
+            }
+            
+            ul {
+                grid-template-columns: 1fr;
+            }
+            
+            table td:first-child {
+                width: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>SULAIMANU ADAMU BELLO</h1>
+            <p>Ingénieur Mécatronique | Full-Stack Developer</p>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="profile-header">
+                <div class="profile-image">
+                    <img src="assets/moi.jpg" alt="Photo de SULAIMANU ADAMU BELLO">
+                </div>
+                <div class="profile-info">
+                    <h3>À Propos</h3>
+                    <p class="bio">
+                        Ingénieur en conception des systèmes mécatroniques avec une passion pour l'innovation technologique. 
+                        Je combine mon expertise en systèmes embarqués et automatisation avec mes compétences en développement 
+                        full-stack pour créer des solutions intelligentes et intégrées. Aspirant développeur Full-Stack, 
+                        je m'efforce de repousser les limites entre le matériel et le logiciel.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Compétences Techniques</h2>
+            <ul>
+                <li>Conception des systèmes embarqués</li>
+                <li>Maîtrise des logiciels de CAO/DAO</li>
+                <li>Programmation des automates SIEMENS</li>
+                <li>Maîtrise de la langue Python</li>
+                <li>Programmation C++/C</li>
+                <li>Développement HTML & CSS</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Expériences</h2>
+            <table>
+                <tr>
+                    <td>2025 - Présent</td>
+                    <td>
+                        <strong>Ingénieur Mécatronique</strong><br>
+                        Conception et développement de systèmes embarqués pour l'automatisation industrielle. 
+                        Programmation d'automates SIEMENS et intégration de solutions IoT.
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <div class="contact-links">
+                <a href="mailto:sulaimanuadamubello144@gmail.com">📧 Email</a>
+                <a href="https://linkedin.com/in/sulaimanu-bello" target="_blank">💼 LinkedIn</a>
+                <a href="https://github.com/sulaimanu-bello" target="_blank">💻 GitHub</a>
+                <a href="tel:+237680065161">📱 +237 680 065 161</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SULAIMANU ADAMU BELLO - Tous droits réservés | Ingénieur Mécatronique & Full-Stack Developer</p>
+    </footer>
+</body>
+</html>

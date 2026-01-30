@@ -3,267 +3,289 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil - SULAIMANU ADAMU BELLO</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Poppins', sans-serif;
-            background: #f5f7fa;
-            color: #333;
-            line-height: 1.6;
-        }
-        
-        header {
-            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-            color: white;
-            padding: 2.5rem 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        
-        header .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            text-align: center;
-        }
-        
-        header h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-        }
-        
-        header p {
-            font-size: 1.1rem;
-            color: #ecf0f1;
-        }
-        
-        main {
-            max-width: 1000px;
-            margin: 2rem auto;
-            padding: 0 2rem;
-        }
-        
-        section {
-            background: white;
-            border-radius: 8px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        }
-        
-        h2 {
-            font-size: 1.8rem;
-            color: #2c3e50;
-            margin-bottom: 1.5rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 3px solid #3498db;
-        }
-        
-        .profile-header {
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-        }
-        
-        .profile-image img {
-            width: 180px;
-            height: 180px;
-            border-radius: 10px;
-            object-fit: cover;
-            border: 3px solid #3498db;
-            box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
-        }
-        
-        .profile-info {
-            flex: 1;
-            min-width: 300px;
-        }
-        
-        .profile-info h3 {
-            font-size: 1.8rem;
-            color: #2c3e50;
-            margin-bottom: 1rem;
-        }
-        
-        .bio {
-            font-size: 1rem;
-            line-height: 1.8;
-            color: #555;
-        }
-        
-        ul {
-            list-style: none;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 0.8rem;
-        }
-        
-        li {
-            background: #f8f9fa;
-            padding: 0.8rem 1.2rem;
-            border-radius: 5px;
-            border-left: 3px solid #3498db;
-            color: #555;
-        }
-        
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 1rem;
-        }
-        
-        table td {
-            padding: 1rem;
-            border-bottom: 1px solid #eee;
-            vertical-align: top;
-        }
-        
-        table tr:last-child td {
-            border-bottom: none;
-        }
-        
-        table td:first-child {
-            color: #3498db;
-            font-weight: 600;
-            width: 180px;
-        }
-        
-        table td:last-child {
-            color: #555;
-        }
-        
-        .contact-links {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-        
-        a {
-            color: white;
-            background: #3498db;
-            text-decoration: none;
-            padding: 0.7rem 1.5rem;
-            border-radius: 5px;
-            transition: background 0.3s ease;
-            font-weight: 500;
-            display: inline-block;
-        }
-        
-        a:hover {
-            background: #2980b9;
-        }
-        
-        footer {
-            background: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 1.5rem;
-            margin-top: 2rem;
-        }
-        
-        footer p {
-            font-size: 0.9rem;
-        }
-        
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2rem;
-            }
-            
-            .profile-header {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            section {
-                padding: 1.5rem;
-            }
-            
-            ul {
-                grid-template-columns: 1fr;
-            }
-            
-            table td:first-child {
-                width: 120px;
-            }
-        }
-    </style>
+    <title>SULAIMANU ADAMU BELLO - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
+    <!-- MENU DE NAVIGATION EN HAUT -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">SAB</a>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                <li><a href="#apropos" class="nav-link">À Propos</a></li>
+                <li><a href="#competences" class="nav-link">Compétences</a></li>
+                <li><a href="#experiences" class="nav-link">Expériences</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- SECTION D'ACCUEIL (HERO) -->
+    <header id="accueil" class="hero">
+        <div class="hero-content">
             <h1>SULAIMANU ADAMU BELLO</h1>
-            <p>Ingénieur Mécatronique | Full-Stack Developer</p>
+            <p class="hero-subtitle">Ingénieur en Conception des Systèmes Mécatroniques</p>
+            <p class="hero-description">Aspirant Full-Stack Developer</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Me Contacter</a>
+                <a href="#competences" class="btn btn-secondary">Mes Compétences</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
         </div>
     </header>
 
+    <!-- CONTENU PRINCIPAL -->
     <main>
-        <section>
-            <div class="profile-header">
-                <div class="profile-image">
-                    <img src="assets/moi.jpg" alt="Photo de SULAIMANU ADAMU BELLO">
+        <!-- SECTION À PROPOS -->
+        <section id="apropos" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Qui suis-je ?</span>
+                    <h2>À Propos de Moi</h2>
                 </div>
-                <div class="profile-info">
-                    <h3>À Propos</h3>
-                    <p class="bio">
-                        Ingénieur en conception des systèmes mécatroniques avec une passion pour l'innovation technologique. 
-                        Je combine mon expertise en systèmes embarqués et automatisation avec mes compétences en développement 
-                        full-stack pour créer des solutions intelligentes et intégrées. Aspirant développeur Full-Stack, 
-                        je m'efforce de repousser les limites entre le matériel et le logiciel.
-                    </p>
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="image-wrapper">
+                            <img src="assets/moi.jpg" alt="Photo de profil">
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <h3>Ingénieur Passionné par l'Innovation</h3>
+                        <p>
+                            Ingénieur en conception des systèmes mécatroniques avec une passion pour l'innovation technologique. 
+                            Je combine mon expertise en systèmes embarqués et automatisation avec mes compétences en développement 
+                            full-stack pour créer des solutions intelligentes et intégrées.
+                        </p>
+                        <p>
+                            Aspirant développeur Full-Stack, je m'efforce de repousser les limites entre le matériel et le logiciel, 
+                            en créant des ponts entre l'ingénierie mécatronique et le développement web moderne.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="6">0</span>
+                                <span class="stat-label">Compétences</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="2">0</span>
+                                <span class="stat-label">Années</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="15">0</span>
+                                <span class="stat-label">Projets</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section>
-            <h2>Compétences Techniques</h2>
-            <ul>
-                <li>Conception des systèmes embarqués</li>
-                <li>Maîtrise des logiciels de CAO/DAO</li>
-                <li>Programmation des automates SIEMENS</li>
-                <li>Maîtrise de la langue Python</li>
-                <li>Programmation C++/C</li>
-                <li>Développement HTML & CSS</li>
-            </ul>
+        <!-- SECTION COMPÉTENCES -->
+        <section id="competences" class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Mon Expertise</span>
+                    <h2>Compétences Techniques</h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="assets/systeme-embarque.jpeg" alt="Systèmes Embarqués">
+                        </div>
+                        <h3>Systèmes Embarqués</h3>
+                        <p>Développement et intégration de systèmes embarqués pour l'automatisation industrielle.</p>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-progress="90"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="assets/CAO.png" alt="CAO/DAO">
+                        </div>
+                        <h3>CAO/DAO</h3>
+                        <p>Conception et modélisation 3D, dessins techniques et simulation de systèmes mécaniques.</p>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-progress="85"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="assets/siemens.jpg" alt="SIEMENS">
+                        </div>
+                        <h3>Automates SIEMENS</h3>
+                        <p>Programmation d'automates SIEMENS (TIA Portal, Step 7).</p>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-progress="88"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="assets/python.jpeg" alt="Python">
+                        </div>
+                        <h3>Python</h3>
+                        <p>Développement d'applications, automatisation et scripts pour l'ingénierie.</p>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-progress="92"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="assets/cpp.jpg" alt="C++/C">
+                        </div>
+                        <h3>C++/C</h3>
+                        <p>Programmation bas niveau pour systèmes embarqués et microcontrôleurs.</p>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-progress="87"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="assets/htmlcss.jpg" alt="HTML/CSS">
+                        </div>
+                        <h3>HTML & CSS</h3>
+                        <p>Création de sites web modernes, responsifs et interfaces utilisateur.</p>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-progress="90"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>Expériences</h2>
-            <table>
-                <tr>
-                    <td>2025 - Présent</td>
-                    <td>
-                        <strong>Ingénieur Mécatronique</strong><br>
-                        Conception et développement de systèmes embarqués pour l'automatisation industrielle. 
-                        Programmation d'automates SIEMENS et intégration de solutions IoT.
-                    </td>
-                </tr>
-            </table>
+        <!-- SECTION EXPÉRIENCES -->
+        <section id="experiences" class="experience-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Mon Parcours</span>
+                    <h2>Expérience Professionnelle</h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2025 - Présent</span>
+                            <h3>Ingénieur Mécatronique</h3>
+                            <p>
+                                Conception et développement de systèmes embarqués pour l'automatisation industrielle. 
+                                Programmation d'automates SIEMENS et intégration de solutions IoT.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>Systèmes Embarqués</span>
+                                <span>Automatisation</span>
+                                <span>SIEMENS</span>
+                                <span>IoT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>Contact</h2>
-            <div class="contact-links">
-                <a href="mailto:sulaimanuadamubello144@gmail.com">📧 Email</a>
-                <a href="https://linkedin.com/in/sulaimanu-bello" target="_blank">💼 LinkedIn</a>
-                <a href="https://github.com/sulaimanu-bello" target="_blank">💻 GitHub</a>
-                <a href="tel:+237680065161">📱 +237 680 065 161</a>
+        <!-- SECTION CONTACT -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Contactez-moi</span>
+                    <h2>Travaillons Ensemble</h2>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Informations de Contact</h3>
+                        <p>N'hésitez pas à me contacter pour discuter de vos projets.</p>
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="contact-icon">📧</div>
+                                <div class="contact-details">
+                                    <h4>Email</h4>
+                                    <a href="mailto:sulaimanuadamubello144@gmail.com">sulaimanuadamubello144@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">📱</div>
+                                <div class="contact-details">
+                                    <h4>Téléphone</h4>
+                                    <a href="tel:+237680065161">+237 680 065 161</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">📍</div>
+                                <div class="contact-details">
+                                    <h4>Localisation</h4>
+                                    <p>Douala, Cameroun</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://linkedin.com/in/sulaimanu-bello" target="_blank" class="social-link">LinkedIn</a>
+                            <a href="https://github.com/sulaimanu-bello" target="_blank" class="social-link">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="contact-form-wrapper">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder="Votre nom" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" placeholder="Votre email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" placeholder="Sujet" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" rows="5" placeholder="Votre message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">Envoyer</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 SULAIMANU ADAMU BELLO - Tous droits réservés | Ingénieur Mécatronique & Full-Stack Developer</p>
+    <!-- PIED DE PAGE -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SULAIMANU ADAMU BELLO</h3>
+                    <p>Ingénieur Mécatronique & Full-Stack Developer</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#apropos">À Propos</a></li>
+                        <li><a href="#competences">Compétences</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>sulaimanuadamubello144@gmail.com</li>
+                        <li>+237 680 065 161</li>
+                        <li>Douala, Cameroun</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SULAIMANU ADAMU BELLO - Tous droits réservés</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -4,12 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sulaimanu Adamu Bello — Portfolio</title>
+  <meta name="description" content="Portfolio de Sulaimanu Adamu Bello, ingénieur mécatronique et développeur full-stack.">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; form-action https://formsubmit.co; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; connect-src 'self' https://formsubmit.co; form-action https://formsubmit.co; base-uri 'self'; object-src 'none'; upgrade-insecure-requests">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/SAB-DEV.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -109,7 +111,7 @@
               <div class="stat-label">Ans d'expérience</div>
             </div>
             <div class="stat-card">
-              <div class="stat-num" data-count="8">0</div>
+              <div class="stat-num" data-count="10">0</div>
               <div class="stat-label">Technologies maîtrisées</div>
             </div>
           </div>
@@ -170,9 +172,9 @@
           <h3 class="skill-title">Python</h3>
           <p class="skill-desc">Développement de scripts d'automatisation, IA et traitement de données avec TensorFlow.</p>
           <div class="skill-bar">
-            <div class="skill-fill" data-w="90"></div>
+            <div class="skill-fill" data-w="100"></div>
           </div>
-          <span class="skill-percent">90%</span>
+          <span class="skill-percent">100%</span>
         </div>
 
         <div class="skill-card" data-reveal>
@@ -194,14 +196,37 @@
           <h3 class="skill-title">HTML / CSS / JavaScript</h3>
           <p class="skill-desc">Création d'interfaces web modernes, responsives et performantes.</p>
           <div class="skill-bar">
-            <div class="skill-fill" data-w="87"></div>
+            <div class="skill-fill" data-w="100"></div>
           </div>
-          <span class="skill-percent">87%</span>
+          <span class="skill-percent">100%</span>
+        </div>
+
+        <div class="skill-card" data-reveal>
+          <div class="skill-icon">
+            <img src="assets/react.jpg" alt="React" loading="lazy" decoding="async">
+          </div>
+          <h3 class="skill-title">React</h3>
+          <p class="skill-desc">Développement d'interfaces dynamiques en composants réutilisables avec state management moderne.</p>
+          <div class="skill-bar">
+            <div class="skill-fill" data-w="85"></div>
+          </div>
+          <span class="skill-percent">85%</span>
+        </div>
+
+        <div class="skill-card" data-reveal>
+          <div class="skill-icon">
+            <img src="assets/next-js.jpg" alt="Next.js" loading="lazy" decoding="async">
+          </div>
+          <h3 class="skill-title">Next.js</h3>
+          <p class="skill-desc">Création d'applications React structurées avec routing, rendu optimisé et architecture évolutive.</p>
+          <div class="skill-bar">
+            <div class="skill-fill" data-w="85"></div>
+          </div>
+          <span class="skill-percent">85%</span>
         </div>
       </div>
     </div>
   </section>
-
   <section id="experience" class="section experience">
     <div class="container">
       <div class="section-label">
@@ -346,6 +371,95 @@
             </div>
             <h3 class="proj-title">Portfolio Professionnel</h3>
             <p class="proj-desc">Site portfolio personnel moderne avec animations avancées et design soigné.</p>
+          </div>
+        </article>
+        <article class="proj-card" data-cat="web" data-reveal role="button" tabindex="0" aria-haspopup="dialog" data-modal-target="p5">
+          <div class="proj-img">
+            <img src="assets/python.jpeg" alt="Gestion de stock" loading="lazy" decoding="async">
+            <div class="proj-overlay">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            </div>
+          </div>
+          <div class="proj-content">
+            <div class="proj-meta">
+              <span class="tag cat-web">Web</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">POS</span>
+            </div>
+            <h3 class="proj-title">Gestion de Vente - Stock + POS</h3>
+            <p class="proj-desc">Application complète de gestion de stock et caisse avec règles FEFO, lots/séries, RBAC et API sécurisée.</p>
+          </div>
+        </article>
+
+        <article class="proj-card" data-cat="web" data-reveal role="button" tabindex="0" aria-haspopup="dialog" data-modal-target="p6">
+          <div class="proj-img">
+            <img src="assets/Background.jpg" alt="Gestion portuaire" loading="lazy" decoding="async">
+            <div class="proj-overlay">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            </div>
+          </div>
+          <div class="proj-content">
+            <div class="proj-meta">
+              <span class="tag cat-web">Web</span>
+              <span class="tag">React</span>
+              <span class="tag">NestJS</span>
+            </div>
+            <h3 class="proj-title">Gestion-Port (PortOps Kribi MVP)</h3>
+            <p class="proj-desc">Plateforme de gestion du trafic conteneurisé avec supervision temps réel, modules métiers et architecture modulaire.</p>
+          </div>
+        </article>
+
+        <article class="proj-card" data-cat="web" data-reveal role="button" tabindex="0" aria-haspopup="dialog" data-modal-target="p7">
+          <div class="proj-img">
+            <img src="assets/portfolio.png" alt="Dege-Immo" loading="lazy" decoding="async">
+            <div class="proj-overlay">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            </div>
+          </div>
+          <div class="proj-content">
+            <div class="proj-meta">
+              <span class="tag cat-web">Web</span>
+              <span class="tag">Immobilier</span>
+              <span class="tag">Vanilla JS</span>
+            </div>
+            <h3 class="proj-title">Dege-Immo</h3>
+            <p class="proj-desc">Site immobilier avec espace admin, filtres annonces, import/export JSON et gestion des données via localStorage.</p>
+          </div>
+        </article>
+
+        <article class="proj-card" data-cat="web" data-reveal role="button" tabindex="0" aria-haspopup="dialog" data-modal-target="p8">
+          <div class="proj-img">
+            <img src="assets/sulai-barber.png" alt="Salon Femme Complex" loading="lazy" decoding="async">
+            <div class="proj-overlay">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            </div>
+          </div>
+          <div class="proj-content">
+            <div class="proj-meta">
+              <span class="tag cat-web">Web</span>
+              <span class="tag">Réservation</span>
+              <span class="tag">EmailJS</span>
+            </div>
+            <h3 class="proj-title">SALON FEMME COMPLEX</h3>
+            <p class="proj-desc">Site multipage de salon avec booking intelligent, galerie filtrable, avis clients et pages de services détaillés.</p>
+          </div>
+        </article>
+
+        <article class="proj-card" data-cat="web" data-reveal role="button" tabindex="0" aria-haspopup="dialog" data-modal-target="p9">
+          <div class="proj-img">
+            <img src="assets/htmlcss.jpg" alt="PAGE-BLOG" loading="lazy" decoding="async">
+            <div class="proj-overlay">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            </div>
+          </div>
+          <div class="proj-content">
+            <div class="proj-meta">
+              <span class="tag cat-web">Web</span>
+              <span class="tag">Blog</span>
+              <span class="tag">SEO</span>
+            </div>
+            <h3 class="proj-title">PAGE-BLOG</h3>
+            <p class="proj-desc">Article technique long format sur la mécatronique avec design éditorial premium, TOC active et progression de lecture.</p>
           </div>
         </article>
       </div>
@@ -702,6 +816,234 @@
 
         <div class="modal-actions">
           <a href="https://github.com/SABCORP2002/page-de-profil" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            Voir sur GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="modal" id="p5" role="dialog" aria-modal="true">
+    <button class="modal-close" data-modal-close aria-label="Fermer">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="modal-scroll">
+      <img src="assets/python.jpeg" alt="Gestion de stock" class="modal-hero-img" loading="lazy" decoding="async">
+      <div class="modal-content">
+        <div class="proj-meta">
+          <span class="tag cat-web">Web</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">React</span>
+          <span class="tag">PostgreSQL</span>
+        </div>
+        <h2>Gestion de Vente - Stock + POS (Lots / Séries / Péremption)</h2>
+        <p>Application web complète pour magasin mono-site avec API versionnée, gestion de stock transactionnelle et module POS.</p>
+
+        <h4>Fonctionnalités principales</h4>
+        <ul class="modal-ul">
+          <li>Authentification JWT access/refresh avec rotation et révocation</li>
+          <li>RBAC complet (Admin, Manager, Magasinier, Caissier)</li>
+          <li>Stock immuable via journal des mouvements et balances</li>
+          <li>Règle FEFO stricte avec blocage des lots expirés</li>
+          <li>POS avec scan barcode, serials, ticket et historique ventes</li>
+          <li>Migrations Alembic, seed de démo et tests pytest</li>
+        </ul>
+
+        <h4>Stack technique</h4>
+        <div class="proj-meta">
+          <span class="tag">FastAPI</span>
+          <span class="tag">React</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">Alembic</span>
+          <span class="tag">Pytest</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Nginx</span>
+        </div>
+
+        <div class="modal-actions">
+          <a href="https://github.com/SABCORP2002/Gestion-de-stock" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            Voir sur GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="p6" role="dialog" aria-modal="true">
+    <button class="modal-close" data-modal-close aria-label="Fermer">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="modal-scroll">
+      <img src="assets/Background.jpg" alt="Gestion Port" class="modal-hero-img" loading="lazy" decoding="async">
+      <div class="modal-content">
+        <div class="proj-meta">
+          <span class="tag cat-web">Web</span>
+          <span class="tag">React</span>
+          <span class="tag">NestJS</span>
+          <span class="tag">Prisma</span>
+        </div>
+        <h2>Gestion-Port - PortOps Kribi MVP</h2>
+        <p>Plateforme de gestion du trafic conteneurisé pour terminal portuaire, conçue en monolithe modulaire configurable.</p>
+
+        <h4>Fonctionnalités principales</h4>
+        <ul class="modal-ul">
+          <li>Frontend React (Vite) avec modules métiers et routes lazy-loaded</li>
+          <li>Backend NestJS modulaire avec schéma Prisma</li>
+          <li>JWT + RBAC granulaire par domaine métier</li>
+          <li>Modules port-calls, berths, gate, queue, yard, documents, incidents</li>
+          <li>Supervision temps réel via WebSocket (/ws)</li>
+          <li>Architecture PostgreSQL + Redis + NGINX</li>
+        </ul>
+
+        <h4>Stack technique</h4>
+        <div class="proj-meta">
+          <span class="tag">React</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">NestJS</span>
+          <span class="tag">Prisma</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">Redis</span>
+          <span class="tag">WebSocket</span>
+          <span class="tag">Docker</span>
+        </div>
+
+        <div class="modal-actions">
+          <a href="https://github.com/SABCORP2002/Gestion-Port" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            Voir sur GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="p7" role="dialog" aria-modal="true">
+    <button class="modal-close" data-modal-close aria-label="Fermer">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="modal-scroll">
+      <img src="assets/portfolio.png" alt="Dege-Immo" class="modal-hero-img" loading="lazy" decoding="async">
+      <div class="modal-content">
+        <div class="proj-meta">
+          <span class="tag cat-web">Web</span>
+          <span class="tag">Immobilier</span>
+          <span class="tag">Admin Panel</span>
+        </div>
+        <h2>Dege-Immo - Real Estate Rental</h2>
+        <p>Application web immobilière en HTML/CSS/JavaScript avec site public visiteurs et panneau propriétaire admin.</p>
+
+        <h4>Fonctionnalités principales</h4>
+        <ul class="modal-ul">
+          <li>Listings avec filtres et modal détail</li>
+          <li>Espace admin avec authentification et expiration de session</li>
+          <li>CRUD annonces + import/export JSON</li>
+          <li>Sanitation des données avant stockage et rendu</li>
+          <li>Dark mode persistant et configuration propriétaire</li>
+          <li>Contact dynamique (mailto, tel, WhatsApp)</li>
+        </ul>
+
+        <h4>Stack technique</h4>
+        <div class="proj-meta">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">LocalStorage</span>
+          <span class="tag">SessionStorage</span>
+        </div>
+
+        <div class="modal-actions">
+          <a href="https://github.com/SABCORP2002/dege-immo" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            Voir sur GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="p8" role="dialog" aria-modal="true">
+    <button class="modal-close" data-modal-close aria-label="Fermer">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="modal-scroll">
+      <img src="assets/sulai-barber.png" alt="Salon Femme Complex" class="modal-hero-img" loading="lazy" decoding="async">
+      <div class="modal-content">
+        <div class="proj-meta">
+          <span class="tag cat-web">Web</span>
+          <span class="tag">Réservation</span>
+          <span class="tag">EmailJS</span>
+          <span class="tag">Multi-pages</span>
+        </div>
+        <h2>SALON-FEMME-COMPLEX</h2>
+        <p>Site web multipage pour salon de coiffure féminin avec expérience premium, booking dynamique et gestion de contenu front-end.</p>
+
+        <h4>Fonctionnalités principales</h4>
+        <ul class="modal-ul">
+          <li>Pages Home, Services, Gallery, Reviews, Contact et Booking</li>
+          <li>Formulaire de réservation avec validation et récap en temps réel</li>
+          <li>Envoi de demande via EmailJS avec fallback mailto</li>
+          <li>Galerie filtrable avec lightbox</li>
+          <li>Collecte d'avis clients avec note et commentaire</li>
+          <li>Composants partagés header/footer et animations reveal</li>
+        </ul>
+
+        <h4>Stack technique</h4>
+        <div class="proj-meta">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">EmailJS</span>
+        </div>
+
+        <div class="modal-actions">
+          <a href="https://github.com/SABCORP2002/SALON-FEMME-COMPLEX" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            Voir sur GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="p9" role="dialog" aria-modal="true">
+    <button class="modal-close" data-modal-close aria-label="Fermer">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="modal-scroll">
+      <img src="assets/htmlcss.jpg" alt="PAGE-BLOG" class="modal-hero-img" loading="lazy" decoding="async">
+      <div class="modal-content">
+        <div class="proj-meta">
+          <span class="tag cat-web">Web</span>
+          <span class="tag">Blog</span>
+          <span class="tag">SEO</span>
+          <span class="tag">UI Éditoriale</span>
+        </div>
+        <h2>PAGE-BLOG - La Mécatronique : la révolution silencieuse</h2>
+        <p>Page éditoriale complète en français sur la mécatronique, avec mise en page immersive et interactions de lecture modernes.</p>
+
+        <h4>Fonctionnalités principales</h4>
+        <ul class="modal-ul">
+          <li>Structure article avec typographie premium et hero immersif</li>
+          <li>Meta SEO et Open Graph pour partage optimisé</li>
+          <li>Barre de progression de lecture</li>
+          <li>Table des matières avec lien actif selon la section visible</li>
+          <li>Animations reveal et support prefers-reduced-motion</li>
+          <li>Bouton retour haut et header réactif au scroll</li>
+        </ul>
+
+        <h4>Stack technique</h4>
+        <div class="proj-meta">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">SEO</span>
+        </div>
+
+        <div class="modal-actions">
+          <a href="https://github.com/SABCORP2002/PAGE-BLOG" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
             <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
             Voir sur GitHub
           </a>

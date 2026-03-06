@@ -250,12 +250,12 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         form.reset();
         if (formSuccess) {
-          if (formSuccessText) formSuccessText.textContent = 'Message envoye avec succes !';
+          if (formSuccessText) formSuccessText.textContent = "Message envoyé avec succès !";
           formSuccess.classList.add('show');
         }
       }).catch(function () {
         if (formSuccess) {
-          if (formSuccessText) formSuccessText.textContent = 'Erreur lors de l envoi. Veuillez reessayer.';
+          if (formSuccessText) formSuccessText.textContent = "Erreur lors de l'envoi. Veuillez réessayer.";
           formSuccess.classList.add('show');
         }
       }).finally(function () {

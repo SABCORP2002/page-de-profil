@@ -15,7 +15,7 @@
   --cat-robotique:  #ec4899;
   --cat-web:        #10b981;
   --cat-evenementiel: #f59e0b;
-  --nav-h:     72px;
+  --nav-h:     100px;
   --radius:    12px;
   --radius-lg: 20px;
   --transition: cubic-bezier(.4,0,.2,1);
@@ -130,7 +130,7 @@ body:not(:hover) .cursor, body:not(:hover) .cursor-trail { opacity: 0; }
 }
 .logo-img {
   width: auto;
-  height: 55px;
+  height: 70px;
   object-fit: contain;
 }
 
@@ -970,7 +970,7 @@ body:not(:hover) .cursor, body:not(:hover) .cursor-trail { opacity: 0; }
 }
 .footer-logo {
   width: auto;
-  height: 50px;
+  height: 80px;
   object-fit: contain;
   margin-bottom: 1rem;
 }

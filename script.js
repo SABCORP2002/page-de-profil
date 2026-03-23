@@ -5,6 +5,27 @@ document.addEventListener('DOMContentLoaded', function () {
   var heroBgImg = document.querySelector('.hero-bg-img');
   var allLinks = document.querySelectorAll('.nav-link');
   var sections = document.querySelectorAll('section[id], header[id]');
+  var supportsFinePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  var allowParallax = !prefersReducedMotion && window.matchMedia('(min-width: 1025px)').matches && supportsFinePointer;
+
+  function setViewportUnit() {
+    var vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', vh + 'px');
+  }
+
+  function smoothScrollTo(top) {
+    if (prefersReducedMotion) {
+      window.scrollTo(0, top);
+      return;
+    }
+    try {
+      window.scrollTo({ top: top, behavior: 'smooth' });
+    } catch (err) {
+      window.scrollTo(0, top);
+    }
+  }
+
+  setViewportUnit();
 
   var loader = document.getElementById('loader');
   if (loader) {
@@ -13,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }, prefersReducedMotion ? 200 : 900);
   }
 
-  var canUseCustomCursor = window.innerWidth > 768 && !prefersReducedMotion;
+  var canUseCustomCursor = supportsFinePointer && window.innerWidth > 768 && !prefersReducedMotion;
   if (canUseCustomCursor) {
     document.body.classList.add('use-custom-cursor');
   } else {
@@ -95,10 +116,7 @@ document.addEventListener('DOMContentLoaded', function () {
       var target = document.querySelector(this.getAttribute('href'));
       if (!target) return;
       e.preventDefault();
-      window.scrollTo({
-        top: target.offsetTop - 80,
-        behavior: prefersReducedMotion ? 'auto' : 'smooth'
-      });
+      smoothScrollTo(target.offsetTop - 80);
     });
   });
 
@@ -266,7 +284,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (backTop) {
     backTop.addEventListener('click', function () {
-      window.scrollTo({ top: 0, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
+      smoothScrollTo(0);
     });
   }
 
@@ -282,13 +300,28 @@ document.addEventListener('DOMContentLoaded', function () {
       animateStats();
 
       if (backTop) backTop.classList.toggle('show', y > 500);
-      if (heroBgImg && !prefersReducedMotion && y < window.innerHeight) {
+      if (heroBgImg && allowParallax && y < window.innerHeight) {
         heroBgImg.style.transform = 'translateY(' + y * 0.3 + 'px)';
       }
 
       ticking = false;
     });
   }
+
+  window.addEventListener('resize', function () {
+    setViewportUnit();
+    supportsFinePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+    allowParallax = !prefersReducedMotion && window.matchMedia('(min-width: 1025px)').matches && supportsFinePointer;
+
+    canUseCustomCursor = supportsFinePointer && window.innerWidth > 768 && !prefersReducedMotion;
+    if (canUseCustomCursor) {
+      document.body.classList.add('use-custom-cursor');
+    } else {
+      document.body.classList.remove('use-custom-cursor');
+    }
+  }, { passive: true });
+
+  window.addEventListener('orientationchange', setViewportUnit, { passive: true });
 
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
